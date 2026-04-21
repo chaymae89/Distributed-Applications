@@ -1,0 +1,14 @@
+// document.proto
+syntax = "proto3";
+
+package demo;
+
+message Document {
+    int32  id             = 1;
+    string title          = 2;
+    string author         = 3;
+    repeated string tags  = 4;
+
+    // Ajouté en v2 — compatible avec v1
+    string classification  = 5;
+}
